@@ -177,7 +177,7 @@ namespace RecodeSolutions.Tests
             }
             catch (Exception ex)
             {
-                string screenshotPath = CaptureScreenshot("TC03_HoverOnPlatforms");
+                string screenshotPath = CaptureScreenshot("TC03_HoverOnPlatformss");
                 test.Log(Status.Fail, $"Test failed: {ex.Message}")
                     .AddScreenCaptureFromPath(screenshotPath);
                 throw;
