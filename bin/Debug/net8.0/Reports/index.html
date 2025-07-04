@@ -1,0 +1,2038 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Recode Solutions - Test Report</title>
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@8539670db814bf19a0ddbe9a6d19058aea0cf981/spark/css/spark-style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style> </style>
+</head>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="spa ">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+            <div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary">Recode UI Automation Suite</span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">04-07-2025 12:22:35</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+            <div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown" onclick="toggleView('test-view')">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="side-nav-controls">
+    <ul>
+      <li>
+        <a href="#" class="lightsout" style="color:#8a8a8a;">
+          <i class="fa fa-desktop"></i>"</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+            <div class="page-container">
+                <div class="main-content">
+                    <div class="test-wrapper row test-view">
+    <div class="test-list">
+        <div class="test-list-tools">
+            <ul class="tools pull-left">
+                <li>
+                    <a href="">
+                        <span class="font-size-14">Tests</span>
+                    </a>
+                </li> 
+            </ul>
+            <ul class="tools text-right">
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-exclamation-circle"></i>
+					</a>
+					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>						<a status="fail" class="dropdown-item" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>																														<div class="dropdown-divider"></div>
+						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+					</ul>
+				</li>
+								            </ul>
+        </div>
+        <div class="test-list-wrapper scrollable">
+            <ul class="test-list-item">
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="1"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC01_HoverOnAboutUs</p> 
+								<p class="duration text-sm">0h:0m:0s+602ms</p> 
+								<span class="datetime">12:22:52 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC01_HoverOnAboutUs</h5>
+										<span class='badge badge-success'>04-07-2025 12:22:52</span>
+										<span class='badge badge-danger'>04-07-2025 12:22:53</span>
+										<span class='badge badge-default'>0h:0m:0s+602ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Hover over the 'About Us' menu item
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:22:52</td>
+				<td>
+Located 'About Us' menu item.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:22:53</td>
+				<td>
+'About Us' hover action performed successfully.									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="2"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC02_HoverOnSolutions</p> 
+								<p class="duration text-sm">0h:0m:0s+323ms</p> 
+								<span class="datetime">12:22:56 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC02_HoverOnSolutions</h5>
+										<span class='badge badge-success'>04-07-2025 12:22:56</span>
+										<span class='badge badge-danger'>04-07-2025 12:22:56</span>
+										<span class='badge badge-default'>0h:0m:0s+323ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Hover over the 'Solutions' menu item
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:22:56</td>
+				<td>
+Located 'Solutions' menu item.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:22:56</td>
+				<td>
+'Solutions' hover action performed successfully.									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="3"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC03_HoverOnPlatforms</p> 
+								<p class="duration text-sm">0h:0m:0s+336ms</p> 
+								<span class="datetime">12:22:59 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC03_HoverOnPlatforms</h5>
+										<span class='badge badge-success'>04-07-2025 12:22:59</span>
+										<span class='badge badge-danger'>04-07-2025 12:22:59</span>
+										<span class='badge badge-default'>0h:0m:0s+336ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Hover over the 'Platforms' menu item
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:22:59</td>
+				<td>
+Located 'Platforms' menu item.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:22:59</td>
+				<td>
+'Platforms' hover action performed successfully.									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="4"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC04_HoverOnCareers</p> 
+								<p class="duration text-sm">0h:0m:0s+345ms</p> 
+								<span class="datetime">12:23:02 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC04_HoverOnCareers</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:02</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:03</span>
+										<span class='badge badge-default'>0h:0m:0s+345ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Hover over the 'Careers' menu item
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:02</td>
+				<td>
+Located 'Careers' menu item.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:03</td>
+				<td>
+'Careers' hover action performed successfully.									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="5"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC05_VerifyLogoAndText</p> 
+								<p class="duration text-sm">0h:0m:0s+125ms</p> 
+								<span class="datetime">12:23:06 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC05_VerifyLogoAndText</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:06</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:06</span>
+										<span class='badge badge-default'>0h:0m:0s+125ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify Recode logo and its adjacent text
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:06</td>
+				<td>
+Text near logo found: Empower Your Workforce with AI-Driven Digital Workers									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:06</td>
+				<td>
+Logo display status: True									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:06</td>
+				<td>
+✅ Recode logo is displayed correctly.									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="6"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC06_NavigateToDeployDigitalWorkers</p> 
+								<p class="duration text-sm">0h:0m:0s+046ms</p> 
+								<span class="datetime">12:23:06 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC06_NavigateToDeployDigitalWorkers</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:06</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:06</span>
+										<span class='badge badge-default'>0h:0m:0s+046ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Navigate to 'Deploy Digital Workers' section
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:06</td>
+				<td>
+'Deploy Digital Workers' element located.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:06</td>
+				<td>
+'Deploy Digital Workers' section scrolled into view.									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="7"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC07_VerifyAboutUsSection</p> 
+								<p class="duration text-sm">0h:0m:2s+052ms</p> 
+								<span class="datetime">12:23:07 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC07_VerifyAboutUsSection</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:07</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:09</span>
+										<span class='badge badge-default'>0h:0m:2s+052ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify 'About Us' section
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:09</td>
+				<td>
+About Us section found.									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="8"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC08_CheckOurStory</p> 
+								<p class="duration text-sm">0h:0m:2s+252ms</p> 
+								<span class="datetime">12:23:09 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC08_CheckOurStory</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:09</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:11</span>
+										<span class='badge badge-default'>0h:0m:2s+252ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Click on 'Our Story' section to verify it's functional
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:11</td>
+				<td>
+Clicked on 'Our Story' button successfully.									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="9"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC09_VerifyStoryAndValuesDetails</p> 
+								<p class="duration text-sm">0h:0m:1s+182ms</p> 
+								<span class="datetime">12:23:11 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">TC09_VerifyStoryAndValuesDetails</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:11</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:13</span>
+										<span class='badge badge-default'>0h:0m:1s+182ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify the 'Our Story' and 'Our Values' sections display correct content.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:11</td>
+				<td>
+Story section text: About Us									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:23:13</td>
+				<td>
+Test failed: element click intercepted: Element <span class="pxl-tab--title pxl-cursor--cta" data-target="#pxl_tabs-0bf4cea-8819-3809af3">...</span> is not clickable at point (945, 18). Other element would receive the click: <div class="elementor-widget-wrap elementor-element-populated">...</div>
+  (Session info: chrome=138.0.7204.50)									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="10"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC10_CheckServicesHeading</p> 
+								<p class="duration text-sm">0h:0m:0s+102ms</p> 
+								<span class="datetime">12:23:13 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC10_CheckServicesHeading</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:13</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:13</span>
+										<span class='badge badge-default'>0h:0m:0s+102ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify the Services section heading is displayed correctly.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:13</td>
+				<td>
+Scrolled down to locate the Services heading.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:13</td>
+				<td>
+Service heading found: EmPowering Industry 4.0 With Digital Transformation									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="11"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC11_NavigateToAILedAutomation</p> 
+								<p class="duration text-sm">0h:0m:12s+001ms</p> 
+								<span class="datetime">12:23:15 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC11_NavigateToAILedAutomation</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:15</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:27</span>
+										<span class='badge badge-default'>0h:0m:12s+001ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Click on AI-Led Automation link and verify heading.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:23</td>
+				<td>
+Clicked on AI-Led Automation section link.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:25</td>
+				<td>
+AI-Led Page Heading: AI-Led Automation									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:27</td>
+				<td>
+Clicked on Recode logo to return to home page.									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="12"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC12_VerifyGENAIService</p> 
+								<p class="duration text-sm">0h:0m:1s+213ms</p> 
+								<span class="datetime">12:23:29 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC12_VerifyGENAIService</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:29</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:30</span>
+										<span class='badge badge-default'>0h:0m:1s+213ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify the presence of GEN AI Service section
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:29</td>
+				<td>
+Scrolled down by 2000 pixels.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:29</td>
+				<td>
+Scrolled into view of the GEN AI Service element.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:30</td>
+				<td>
+GEN AI Service found with text: GEN AI									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="13"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC13_VerifyAILedAutomationService</p> 
+								<p class="duration text-sm">0h:0m:1s+084ms</p> 
+								<span class="datetime">12:23:30 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC13_VerifyAILedAutomationService</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:30</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:31</span>
+										<span class='badge badge-default'>0h:0m:1s+084ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify the presence of AI-Led Automation Service section
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:30</td>
+				<td>
+Scrolled to AI-Led Automation Service section.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:31</td>
+				<td>
+AI-Led Automation Service found with text: AI-Led Automation									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="14"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC14_VerifyDataAnalyticsService</p> 
+								<p class="duration text-sm">0h:0m:1s+097ms</p> 
+								<span class="datetime">12:23:31 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC14_VerifyDataAnalyticsService</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:31</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:32</span>
+										<span class='badge badge-default'>0h:0m:1s+097ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify the presence of Data Analytics Service section
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:31</td>
+				<td>
+Scrolled to Data Analytics Service section.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:32</td>
+				<td>
+Data Analytics Service found with text: Data & Analytics									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="15"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC15_VerifyIntegrationServices</p> 
+								<p class="duration text-sm">0h:0m:1s+082ms</p> 
+								<span class="datetime">12:23:32 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC15_VerifyIntegrationServices</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:32</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:33</span>
+										<span class='badge badge-default'>0h:0m:1s+082ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify the presence of Integration Services section
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:32</td>
+				<td>
+Scrolled to Integration Services section.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:33</td>
+				<td>
+Integration Service found with text: Integration Services									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="16"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC16_VerifyDigitalCommerceSolutions</p> 
+								<p class="duration text-sm">0h:0m:1s+096ms</p> 
+								<span class="datetime">12:23:33 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC16_VerifyDigitalCommerceSolutions</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:33</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:34</span>
+										<span class='badge badge-default'>0h:0m:1s+096ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify the presence of Digital Commerce Solutions section
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:33</td>
+				<td>
+Scrolled to Digital Commerce Solutions section.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:34</td>
+				<td>
+Digital Commerce Solution found with text: Digital Commerce Solutions									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="17"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC17_VerifyQualityAssuranceServices</p> 
+								<p class="duration text-sm">0h:0m:1s+114ms</p> 
+								<span class="datetime">12:23:34 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC17_VerifyQualityAssuranceServices</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:34</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:35</span>
+										<span class='badge badge-default'>0h:0m:1s+114ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify the presence of Quality Assurance Services section
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:34</td>
+				<td>
+Scrolled to Quality Assurance Services section.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:35</td>
+				<td>
+Quality Assurance Service found with text: Quality Assurance Services									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="18"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC18_VerifyDevOpsService</p> 
+								<p class="duration text-sm">0h:0m:1s+081ms</p> 
+								<span class="datetime">12:23:35 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC18_VerifyDevOpsService</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:35</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:36</span>
+										<span class='badge badge-default'>0h:0m:1s+081ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify the presence of DevOps Service section
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:35</td>
+				<td>
+Scrolled to DevOps Service section.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:36</td>
+				<td>
+DevOps Service found with text: DevOps									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="19"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC19_CheckSliderText</p> 
+								<p class="duration text-sm">0h:0m:1s+789ms</p> 
+								<span class="datetime">12:23:36 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">TC19_CheckSliderText</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:36</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:38</span>
+										<span class='badge badge-default'>0h:0m:1s+789ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify the text changes when slider arrow is clicked
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:23:38</td>
+				<td>
+Test failed due to exception: element click intercepted: Element <sr7-arrow class="sr7-leftarrow sr7-arrows uranus" data-dir="-1" style="opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, -25px); inset: 50% auto auto 0px; pointer-events: auto;"></sr7-arrow> is not clickable at point (25, 24). Other element would receive the click: <div class="elementor-widget-wrap elementor-element-populated">...</div>
+  (Session info: chrome=138.0.7204.50)									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='Screenshots\TC19_Exception_20250704_122338.png' src='Screenshots\TC19_Exception_20250704_122338.png' data-src='Screenshots\TC19_Exception_20250704_122338.png'>						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="20"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC20_CheckSecondSliderText</p> 
+								<p class="duration text-sm">0h:0m:1s+594ms</p> 
+								<span class="datetime">12:23:38 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">TC20_CheckSecondSliderText</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:38</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:40</span>
+										<span class='badge badge-default'>0h:0m:1s+594ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify second slider text content after clicking the slider arrow
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>12:23:40</td>
+				<td>
+Test failed due to exception: element click intercepted: Element <sr7-arrow class="sr7-leftarrow sr7-arrows uranus" data-dir="-1" style="opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, -25px); inset: 50% auto auto 0px; pointer-events: auto;"></sr7-arrow> is not clickable at point (25, 24). Other element would receive the click: <div class="elementor-widget-wrap elementor-element-populated">...</div>
+  (Session info: chrome=138.0.7204.50)									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='Screenshots\TC20_Exception_20250704_122339.png' src='Screenshots\TC20_Exception_20250704_122339.png' data-src='Screenshots\TC20_Exception_20250704_122339.png'>						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="21"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC21_VerifyPlatformHeading</p> 
+								<p class="duration text-sm">0h:0m:0s+148ms</p> 
+								<span class="datetime">12:23:40 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC21_VerifyPlatformHeading</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:40</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:40</span>
+										<span class='badge badge-default'>0h:0m:0s+148ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify that the 'Platform' heading is visible on the page.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:40</td>
+				<td>
+Platform heading found: Platform – Vision Based Industrial Automation									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="22"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC22_VerifyAssessmentAndIntegration</p> 
+								<p class="duration text-sm">0h:0m:0s+117ms</p> 
+								<span class="datetime">12:23:40 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC22_VerifyAssessmentAndIntegration</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:40</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:40</span>
+										<span class='badge badge-default'>0h:0m:0s+117ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify the presence of 'Assessment and Integration' section and its details.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:40</td>
+				<td>
+Section title found:									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:40</td>
+				<td>
+Details found:									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="23"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC23_VerifyCustomizationAndDeployment</p> 
+								<p class="duration text-sm">0h:0m:0s+110ms</p> 
+								<span class="datetime">12:23:40 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC23_VerifyCustomizationAndDeployment</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:40</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:40</span>
+										<span class='badge badge-default'>0h:0m:0s+110ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify the 'Customization and Deployment' section and its details.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:40</td>
+				<td>
+Section title found:									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:40</td>
+				<td>
+Details found: Address specific industry challenges, such as package dimensioning in logistics or PPE compliance in manufacturing.									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="24"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC24_VerifyAutomationAndOptimization</p> 
+								<p class="duration text-sm">0h:0m:0s+133ms</p> 
+								<span class="datetime">12:23:40 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC24_VerifyAutomationAndOptimization</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:40</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:40</span>
+										<span class='badge badge-default'>0h:0m:0s+133ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify the 'Automation and Optimization' section and its details.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:40</td>
+				<td>
+Section title found: Automation and Optimization									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:40</td>
+				<td>
+Details found: Utilize insights from KamerAI to automate processes, reduce manual intervention, and improve operational efficiency.									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="25"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC25_ClickGetStartedAndHandleWindows</p> 
+								<p class="duration text-sm">0h:0m:3s+726ms</p> 
+								<span class="datetime">12:23:40 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC25_ClickGetStartedAndHandleWindows</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:40</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:44</span>
+										<span class='badge badge-default'>0h:0m:3s+726ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Click on 'Get Started' and handle new window.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:41</td>
+				<td>
+Clicked on 'Get Started' button.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:44</td>
+				<td>
+Switched to and closed new window.									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="26"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC26_VerifyAchievementText</p> 
+								<p class="duration text-sm">0h:0m:2s+164ms</p> 
+								<span class="datetime">12:23:44 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC26_VerifyAchievementText</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:44</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:46</span>
+										<span class='badge badge-default'>0h:0m:2s+164ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify the 'Achievement' section text is visible and correct.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:44</td>
+				<td>
+Switched to original browser window.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:46</td>
+				<td>
+Achievement text found: We Are Happy With Our Achievement									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="27"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC27_VerifyBrandMessage</p> 
+								<p class="duration text-sm">0h:0m:0s+060ms</p> 
+								<span class="datetime">12:23:46 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC27_VerifyBrandMessage</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:46</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:46</span>
+										<span class='badge badge-default'>0h:0m:0s+060ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify the brand message 'Reimagine, Reengineered, Recode' is visible.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:46</td>
+				<td>
+Brand message displayed: Reimagine, Reengineered, Recode									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="28"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC28_ClickReadMoreAndVerifyCompany</p> 
+								<p class="duration text-sm">0h:0m:6s+044ms</p> 
+								<span class="datetime">12:23:46 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC28_ClickReadMoreAndVerifyCompany</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:46</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:52</span>
+										<span class='badge badge-default'>0h:0m:6s+044ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Click 'Read More' and verify 'Company' text is displayed.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:46</td>
+				<td>
+Located 'Read More' button.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:51</td>
+				<td>
+'Read More' button clicked.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:52</td>
+				<td>
+Company text displayed: Company									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="29"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC29_NavigateBackToHome</p> 
+								<p class="duration text-sm">0h:0m:1s+350ms</p> 
+								<span class="datetime">12:23:52 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC29_NavigateBackToHome</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:52</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:54</span>
+										<span class='badge badge-default'>0h:0m:1s+350ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Click 'Home' to return to the homepage.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:52</td>
+				<td>
+Located 'Home' button.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:54</td>
+				<td>
+'Home' button clicked successfully.									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="30"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC30_VerifyCareersSection</p> 
+								<p class="duration text-sm">0h:0m:0s+395ms</p> 
+								<span class="datetime">12:23:55 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC30_VerifyCareersSection</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:55</span>
+										<span class='badge badge-danger'>04-07-2025 12:23:55</span>
+										<span class='badge badge-default'>0h:0m:0s+395ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify 'Careers at Recode' section is displayed.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:23:55</td>
+				<td>
+Careers section found: Careers At Recode									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="31"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC31_ClickViewMoreAndVerifyText</p> 
+								<p class="duration text-sm">0h:0m:7s+345ms</p> 
+								<span class="datetime">12:23:55 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC31_ClickViewMoreAndVerifyText</h5>
+										<span class='badge badge-success'>04-07-2025 12:23:55</span>
+										<span class='badge badge-danger'>04-07-2025 12:24:02</span>
+										<span class='badge badge-default'>0h:0m:7s+345ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Click 'View More' and verify the recruitment text.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:23:55</td>
+				<td>
+Located 'View More' button with text: View More									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:24:01</td>
+				<td>
+'View More' button clicked successfully.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:24:02</td>
+				<td>
+Recruitment text verified: We're more than just a workplace. We're a family.									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="32"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC32_NavigateBackToHomeAndHandleWindows</p> 
+								<p class="duration text-sm">0h:0m:2s+231ms</p> 
+								<span class="datetime">12:24:02 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC32_NavigateBackToHomeAndHandleWindows</h5>
+										<span class='badge badge-success'>04-07-2025 12:24:02</span>
+										<span class='badge badge-danger'>04-07-2025 12:24:05</span>
+										<span class='badge badge-default'>0h:0m:2s+231ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Navigate back to Home and handle multiple browser windows.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:24:02</td>
+				<td>
+Current window handle: 43BF4ABF801835CFAC220166B5136B6B									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:24:03</td>
+				<td>
+'Home' link clicked.									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>12:24:05</td>
+				<td>
+Total windows after navigation: 2									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:24:05</td>
+				<td>
+Switched to the new window successfully.									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="33"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC33_VerifyLifeAtRecode</p> 
+								<p class="duration text-sm">0h:0m:0s+315ms</p> 
+								<span class="datetime">12:24:05 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC33_VerifyLifeAtRecode</h5>
+										<span class='badge badge-success'>04-07-2025 12:24:05</span>
+										<span class='badge badge-danger'>04-07-2025 12:24:05</span>
+										<span class='badge badge-default'>0h:0m:0s+315ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify the 'Life @ Recode' section is visible and contains the expected text.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:24:05</td>
+				<td>
+'Life @ Recode' section found with text: Life @ Recode									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="34"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TC34_VerifyAwardsSection</p> 
+								<p class="duration text-sm">0h:0m:0s+513ms</p> 
+								<span class="datetime">12:24:05 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">TC34_VerifyAwardsSection</h5>
+										<span class='badge badge-success'>04-07-2025 12:24:05</span>
+										<span class='badge badge-danger'>04-07-2025 12:24:05</span>
+										<span class='badge badge-default'>0h:0m:0s+513ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify the 'Awards' section heading and image are displayed correctly.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:24:05</td>
+				<td>
+Awards heading found: Our Awards									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>12:24:05</td>
+				<td>
+Awards image is displayed correctly.									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+            </ul>    
+        </div>
+    </div>
+    <div class="test-content scrollable">
+        <div class="test-content-tools">
+            <ul>
+                <li>
+                    <a class="back-to-test" href="javascript:void(0)">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="test-content-detail">
+            <div class="detail-body"></div>
+        </div>
+    </div>
+</div>
+										<div class="container-fluid p-4 dashboard-view">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Tests</h6>
+				</div>
+				<div class="card-body">
+	                <div class="">
+	                    <canvas id='parent-analysis' width='115' height='90'></canvas>
+	                </div>
+	            </div>
+	            <div class="card-footer">
+	                <div><small data-tooltip='91.17647058823529%'>
+	                    <b>31</b> tests passed
+                    </small></div>
+	                <div>
+	                    <small data-tooltip='8.823529411764707%'><b>3</b> tests failed, 
+	                    <b data-tooltip='0%'>0</b> others
+	                    </small>
+                    </div>
+	            </div>
+			</div>
+		</div>
+			</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Tests</h6>
+							<h2 class="font-size-28 font-weight-light">34</h2>
+							<span class="text-semibold text-success font-size-15">
+							<i class="ti-arrow-up font-size-11"></i> 
+								<span>91.18%</span>
+							</span>
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-align-left font-size-70 opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Start</h6>
+							<h6 class="font-weight-light">04-07-2025 12:22:35</h6>
+							<span class="text-semibold text-success font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-success opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Duration</h6>
+							<h6 class="font-weight-light">00:01:31.4343716</h6>
+							<span class="text-semibold text-danger font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<p class="">Duration</p>
+							<h6 class="font-weight-light">00:01:36.8845290</h6>
+							<span class="text-semibold font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+							</div>
+</div>
+<script>
+	var statusGroup = {
+    parentCount: 34,
+		passParent: 31,
+		failParent: 3,
+		fatalParent: 0,
+		errorParent: 0,
+		warningParent: 0,
+		skipParent: 0,
+		exceptionsParent: 3,
+		childCount: 0,
+		passChild: 0,
+		failChild: 0,
+		fatalChild: 0,
+		errorChild: 0,
+		warningChild: 0,
+		skipChild: 0,
+		infoChild: 0,
+		debugChild: 0,
+		exceptionsChild: 0,
+		grandChildCount: 0,
+		passGrandChild: 0,
+		failGrandChild: 0,
+		fatalGrandChild: 0,
+		errorGrandChild: 0,
+		warningGrandChild: 0,
+		skipGrandChild: 0,
+		infoGrandChild: 0,
+		debugGrandChild: 0,
+		exceptionsGrandChild: 0,
+	};
+</script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+	<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@cc89904c1a12065be1d08fc4994a258ef01b12bd/spark/js/scripts.js"></script>
+<script type='text/javascript'>
+	
+</script>
+</body>
+
+</html>
