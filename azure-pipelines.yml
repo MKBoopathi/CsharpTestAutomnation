@@ -1,0 +1,61 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main  # change to your branch name if needed
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  buildConfiguration: 'Debug'
+
+steps:
+# Step 1: Use appropriate .NET SDK
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '8.x.x'  # Replace with the exact version your project targets
+
+# Step 2: Restore dependencies
+- script: |
+    echo Restoring dependencies...
+    dotnet restore
+  displayName: 'Restore dependencies'
+
+# Step 3: Build the project
+- script: |
+    echo Building the solution...
+    dotnet build --configuration $(buildConfiguration)
+  displayName: 'Build the solution'
+
+# Step 4: Add required test packages
+- script: |
+    echo Installing required test packages...
+    dotnet add package NUnit3TestAdapter --version 4.5.0
+    dotnet add package Microsoft.NET.Test.Sdk --version 17.9.0
+  displayName: 'Install Test Packages'
+
+# Step 5: Run tests and generate NUnit test result
+- script: |
+    echo Running tests and generating NUnit test result...
+    dotnet test --logger:"trx;LogFileName=TestResults.trx"
+  displayName: 'Run tests'
+
+# Step 6: Copy index.html to workspace root (e.g., ExtentReport)
+- script: |
+    echo Copying index.html to workspace root...
+    mkdir Reports
+    copy bin\Debug\net8.0\Reports\index.html Reports\index.html
+  displayName: 'Copy Report Index'
+
+# Step 7: Publish test results to Azure DevOps Test tab
+- task: PublishTestResults@2
+  inputs:
+    testResultsFiles: '**/TestResults.trx'
+    testResultsFormat: 'VSTest'
+    failTaskOnFailedTests: true
+  condition: succeededOrFailed()
+  displayName: 'Publish Test Results'
